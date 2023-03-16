@@ -26,7 +26,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              <h5>What is the difference between map(), filter(), and forEach()?</h5>
+              <h5> 1. What is the difference between map(), filter(), forEach(),and find()?</h5>
             </button>
           </h2>
           <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
@@ -38,7 +38,9 @@
               
               <strong>filter()</strong> - returns a new array that contains only the elements from the original array that pass a given test function. The original array is not modified. <br> <br>
               
-              <strong>forEach()</strong> - simply iterates over the array and executes a given function for each element, but it does not return anything. The original array is not modified.
+              <strong>forEach()</strong> - simply iterates over the array and executes a given function for each element, but it does not return anything. The original array is not modified. <br> <br>
+
+              <strong>find()</strong> - The find() method returns the first element in the array that satisfies a given condition specified by the callback function. If no element satisfies the condition, find() returns undefined. The original array is not modified. 
             </div>
           </div>
         </div>
@@ -46,7 +48,7 @@
             <h2 class="accordion-header" id="headingTwo">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 <h5>
-                    What is the difference between local storage, session storage and cookies?
+                   2. What is the difference between local storage, session storage and cookies?
                 </h5>
               </button>
             </h2>
@@ -63,7 +65,7 @@
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingThree">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                <h5>What is the event loop and how does it work?</h5>
+                <h5> 3. What is the event loop and how does it work?</h5>
               </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
@@ -72,6 +74,24 @@
                     <h5>Answer is:</h5>
                     The Event Loop is a mechanism in JavaScript that manages the execution of code in a single-threaded environment and allows for non-blocking asynchronous operations by continuously checking the call stack and task queue. It ensures that JavaScript code runs efficiently and effectively. <br> <br>
                     <strong>In summary,</strong> the Event Loop is a mechanism that manages the execution of code in a single-threaded environment and ensures that asynchronous operations in JavaScript are executed efficiently and non-blockingly.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <h5>  4. What is the work of a quizTimer() function?</h5>
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>
+                    <h5>Answer is:</h5>
+                    The quizTimer() function is a JavaScript function that is typically used to create a countdown timer for a quiz application or other time-sensitive application. The function uses the setInterval() method to execute a callback function every seconds and updates an HTML element with an ID of count to display the remaining time in minutes and seconds. <br> <br>
+                    In addition to updating the time, the function changes the color of the timer every 60 seconds to alert the user of the remaining time. If the timer is at a multiple of 60 seconds, the text color of the timer changes to red. If the timer is at an odd second within a minute, the text color of the timer changes to a lighter shade of red.
+                    <br><br>
+                    The quizTimer() function takes a boolean argument called dismiss, which is used to start or stop the timer. If dismiss is true, the function clears the interval timer and returns. If dismiss is false, the function sets the interval timer to start the countdown timer.
                 </p>
               </div>
             </div>
