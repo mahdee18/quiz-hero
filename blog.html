@@ -96,9 +96,29 @@
               </div>
             </div>
           </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                <h5>  5. What is the work of a chooseQuiz() function?</h5>
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>
+                    <h5>Answer is:</h5>
+                    The chooseQuiz() function is designed to update the answers array with a user's answer to a specific quiz question. Here's how it works: <br> <br>
+
+                    First, it checks if the quiz question already exists in the answers array by using the find method on answers. If it finds a matching quiz, it stores the quiz object in the isExist variable.
+                    If the quiz already exists in the answers array, the function searches for the index of the quiz in the array using a for loop. If it finds the quiz, it replaces the quiz object with a new object that includes the user's new answer. <br> <br>
+                    If the quiz does not already exist in the answers array, the function creates a new object that includes the quiz data at the given index and the user's answer and adds it to the answers array using the push method. <br> <br>
+                    Finally, the function calls displayAnswers with the updated answers array, presumably to show the user their updated answers.
+                </p>
+              </div>
+            </div>
+          </div>
       </div>
     <!-- Three Questions Answer -->
-
+      
     </main>
 
 
